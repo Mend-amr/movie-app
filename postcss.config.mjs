@@ -4,4 +4,12 @@ const config = {
   },
 };
 
+module.exports = {
+  darkMode: "class",
+  content: ["./src/**/*.{js,jsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
 export default config;
