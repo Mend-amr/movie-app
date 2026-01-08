@@ -1,7 +1,7 @@
 import { Header } from "./about/components/Header";
+import { MovieCategory } from "./category/MovieCategory";
 import { MovieCard } from "./components/MovieCard";
 import React from "react";
-import { MovieCategory } from "./components/MovieCategory";
 
 export type MovieHome = {
   title: string;

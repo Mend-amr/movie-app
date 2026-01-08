@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-import { MovieCard } from "./MovieCard";
 import { MovieHome } from "../page";
+import { MovieCard } from "../components/MovieCard";
 
 interface MovieCategoryProps {
   movies: MovieHome[];
@@ -10,7 +10,6 @@ interface MovieCategoryProps {
 
   category: string;
 }
-
 export const MovieCategory = ({
   movies,
 
@@ -29,7 +28,7 @@ export const MovieCategory = ({
 
       <div className="grid grid-cols-5 gap-2 max-w-[1440px] m-auto">
         {movies.map((movie) => (
-          <MovieCard Movie={movie} key={movie.id} />
+          <MovieCard movie={movie} key={movie.id} />
         ))}
       </div>
     </div>
